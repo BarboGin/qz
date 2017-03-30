@@ -1,0 +1,362 @@
+/ # UUUUUUUUU猆U猆UUUUUUUUUUUUUUUUUUUUUUUUU猆UUUUUUUU猆UU猆UUUUUUHELLO! BOOT0 is starting!
+boot0 version : 3.1.0
+reg_addr 0x01f00100 =0x00000000
+reg_addr 0x01f00104 =0x00000000
+reg_addr 0x01f00108 =0x00000000
+reg_addr 0x01f0010c =0x00000000
+reg_addr 0x01f00110 =0x00000000
+reg_addr 0x01f00114 =0x00000000
+DRAM DRIVE INFO: V1.5
+DRAM CLK =552 MHZ
+DRAM simple test OK.
+dram size =1024
+card boot number = 2
+card no is 2
+sdcard 2 line count 0
+[mmc]: mmc driver ver 2014-07-07 16:54
+[mmc]: ***Try SD card 2***
+[mmc]: mmc 2 cmd 8 timeout, err 0x00000100
+[mmc]: mmc 2 cmd 8 err 0x00000100
+[mmc]: mmc 2 send if cond failed
+[mmc]: mmc 2 cmd 55 timeout, err 0x00000100
+[mmc]: mmc 2 cmd 55 err 0x00000100
+[mmc]: mmc 2 send app cmd failed
+[mmc]: ***Try MMC card 2***
+[mmc]: MMC ver 5.0
+[mmc]: SD/MMC Card: 4bit, capacity: 3776MB
+[mmc]: vendor: Man 0x00110100 Snr 0x00634706
+[mmc]: product: 004GE
+[mmc]: revision: 3.0
+[mmc]: ***SD/MMC 2 init OK!!!***
+sdcard 2 init ok
+The size of uboot is 0x000c4000.
+sum=0x19cb6c93
+src_sum=0x19cb6c93
+set_mmc_para,sdly 50M 0
+set_mmc_para,sdly 25M 0
+Succeed in loading uboot from sdmmc flash.
+Ready to disable icache.
+Jump to secend Boot.
+[      0.353]
+
+U-Boot 2011.09-rc1-00009-gc4e28a2-dirty (Feb 08 2017 - 12:51:58) Allwinner Technology 
+
+[      0.363]version: 1.1.0
+[      0.451]pmbus:   ready
+[      0.454]PMU: AXP221
+[      0.456]PMU: AXP22x found
+[      0.459]PMU: dcdc3 1200
+[      0.462]PMU: pll1 1008 Mhz,PLL6=600 Mhz
+AXI=336 Mhz,AHB=200 Mhz, APB1=100 Mhz 
+set power on vol to default
+dcdc1_vol = 3000
+dcdc2_vol = 1100
+dcdc3_vol = 1200
+dcdc4_vol = 0
+dcdc5_vol = 1500
+aldo2_vol = 2500
+aldo3_vol = 3000
+dldo2_vol = 1850
+find power_sply to end
+no battery, limit to dc
+fel key new mode
+run key detect
+key pressed value=0x4
+fel key value 4 is not in the range from 16 to 19
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x4
+key pressed value=0x37
+no key input
+dram_para_set start
+dram_para_set end
+[      3.782]DRAM:  1 GiB
+relocation Offset is: 35b09000
+smcl's set manager is NULL
+<axp22, dc1sw>
+<axp22, dldo2>
+workmode = 0
+MMC:     2
+[      3.989][mmc]: mmc driver ver 2014-07-15 17:16:00
+[      3.994][mmc]: get sdc_2xmode ok, val = 1
+[      4.283][mmc]: get sdc_f_max fail,use default sdc_f_max 50000000
+[      4.289][mmc]: get card_line ok, card_line = 4
+[      4.294][mmc]: get sdc_ex_dly_used fail,use default dly
+[      4.299][mmc]: SUNXI SD/MMC: 2
+[      4.304][mmc]: mmc 2 2xmode config clk
+[      4.316][mmc]: ************Try SD card 2************
+[      4.321][mmc]: mmc 2 cmd 8 timeout, err 100
+[      4.326][mmc]: smc 2 err, cmd 8,  RTO
+[      4.331][mmc]: mmc 2 mmc cmd 8 err 0x00000100
+[      4.335][mmc]: mmc send if cond failed
+[      4.339][mmc]: mmc 2 cmd 55 timeout, err 100
+[      4.343][mmc]: smc 2 err, cmd 55,  RTO
+[      4.349][mmc]: mmc 2 mmc cmd 55 err 0x00000100
+[      4.353][mmc]: send app cmd failed
+[      4.356][mmc]: ************Try MMC card 2************
+[      4.396][mmc]: mmc 2 2xmode config clk
+[      4.406][mmc]: mmc 2 2xmode config clk
+[      4.416][mmc]: mmc 2 2xmode config clk
+[      4.425][mmc]: MID 000011 PSN 63470696
+[      4.428][mmc]: PNM 004GE0 -- 0x30-30-34-47-45-30
+[      4.433][mmc]: PRV 0.0
+[      4.436][mmc]: MDT m-3 y-2016
+[      4.439][mmc]: MMC ver 5.0
+[      4.442][mmc]: ---------------mmc->clock 50000000-----------
+[      4.447][mmc]: ---------------mmc->bus_width 4--------------
+[      4.453][mmc]: SD/MMC Card: 4bit, capacity: 3776MB
+[      4.458][mmc]: boot0 capacity: 2000KB,boot1 capacity: 2000KB
+[      4.464][mmc]: ************SD/MMC 2 init OK!!!************
+[      4.470]sunxi flash init ok
+In:    serial
+Out:   serial
+Err:   serial
+--------fastboot partitions--------
+-total partitions:12-
+-name-        -start-       -size-      
+bootloader  : 1000000       2000000     
+env         : 3000000       1000000     
+boot        : 4000000       1000000     
+system      : 5000000       30000000    
+misc        : 35000000      1000000     
+recovery    : 36000000      2000000     
+cache       : 38000000      20000000    
+metadata    : 58000000      1000000     
+private     : 59000000      1000000     
+klog        : 5a000000      1000000     
+alog        : 5b000000      4000000     
+UDISK       : 5f000000      0           
+-----------------------------------
+base bootcmd=run setargs_nand boot_normal
+bootcmd set setargs_mmc
+key 4
+recovery key high 6, low 2
+key found, android recovery
+misc partition found
+misc_message->command = ff 
+Recovery detected, will boot recovery
+to be run cmd=run setargs_mmc boot_recovery
+mount part name bootloader
+cant open script.bin, maybe it is not exist
+WORK_MODE_BOOT
+board_status_probe
+[      4.579]key trigger
+sunxi_bmp_logo_display
+screen_id =0, screen_width =600, screen_height =1024
+[      4.598]Hit any key to stop autoboot:  0 
+read boot or recovery all
+[      5.253]sunxi flash read :offset 36000000, 15672437 bytes OK
+no signature
+[      5.266]ready to boot
+para err in disp_ioctl, cmd = 0xa,screen id = 1
+[      5.272][mmc]: mmc exit start
+[      5.276][mmc]: mmc 2 2xmode config clk
+[      5.286][mmc]: mmc 2 2xmode config clk
+[      5.298][mmc]: mmc 2 cmd 8 timeout, err 100
+[      5.303][mmc]: smc 2 err, cmd 8,  RTO
+[      5.308][mmc]: mmc 2 mmc cmd 8 err 0x00000100
+[      5.312][mmc]: mmc send if cond failed
+[      5.316][mmc]: mmc 2 cmd 55 timeout, err 100
+[      5.320][mmc]: smc 2 err, cmd 55,  RTO
+[      5.326][mmc]: mmc 2 mmc cmd 55 err 0x00000100
+[      5.330][mmc]: send app cmd failed
+[      5.355][mmc]: mmc 2 exit ok
+[      5.358]
+Starting kernel ...
+
+[    0.658182] sunxi_oops: heming add OOPS_INFO_ADDR = -20
+[    0.818189] Bluetooth: get rtl8723bs rtl8723bs_bt_host_wake gpio failed
+[    0.818196] 
+[    0.871713] otg_wakelock_init: No USB transceiver found
+[    0.877587] ths_fetch_sysconfig_para: type err  device_used = 1. 
+[    0.885182] fetch C0_LV_count from sysconfig failed
+[    2.912365] init: /dev/hw_random not found
+[    2.920197] android_usb: already disabled
+[    3.032088] init: width = 600
+[    3.035389] init: height = 1024
+[    3.038874] init: s.st_size = 3145728
+[    3.042998] init: logo match failed!fbsize = 2457600
+[    3.140474] init: /dev/hw_random not found
+[    3.145092] init: Unable to open persistent property directory /data/property errno: 2
+[    3.157463] init: property 'sys.powerctl' doesn't exist while expanding '${sys.powerctl}'
+[    3.166638] init: powerctl: cannot expand '${sys.powerctl}'
+[    9.525240] SysRq : Emergency Remount R/O
+[   11.251529] Restarting system.
+[   11.254923] Restarting Linux version 3.4.39 (czf@czf) (gcc version 4.6.3 20120201 (prerelease) (crosstool-NG linaro-1.13.1-2012.02-20120222 - Linaro GCC 2012.02) ) #2 SMP PREEMPT Tue Mar 7 14:29:58 CST 2017
+[   11.254934] 
+UUUUUUUU猆UUUUUUUUU猆UUUUUUUUUUUUUUUUUUUU猆UU猆UUUUUUUUUUUUU
+                                                            UHELLO! BOOT0 is starting!
+boot0 version : 3.1.0
+reg_addr 0x01f00100 =0x00000000
+reg_addr 0x01f00104 =0x00000000
+reg_addr 0x01f00108 =0x00000000
+reg_addr 0x01f0010c =0x00000000
+reg_addr 0x01f00110 =0x00000000
+reg_addr 0x01f00114 =0x00000000
+DRAM DRIVE INFO: V1.5
+DRAM CLK =552 MHZ
+DRAM simple test OK.
+dram size =1024
+card boot number = 2
+card no is 2
+sdcard 2 line count 0
+[mmc]: mmc driver ver 2014-07-07 16:54
+[mmc]: ***Try SD card 2***
+[mmc]: mmc 2 cmd 8 timeout, err 0x00000100
+[mmc]: mmc 2 cmd 8 err 0x00000100
+[mmc]: mmc 2 send if cond failed
+[mmc]: mmc 2 cmd 55 timeout, err 0x00000100
+[mmc]: mmc 2 cmd 55 err 0x00000100
+[mmc]: mmc 2 send app cmd failed
+[mmc]: ***Try MMC card 2***
+[mmc]: MMC ver 5.0
+[mmc]: SD/MMC Card: 4bit, capacity: 3776MB
+[mmc]: vendor: Man 0x00110100 Snr 0x00634706
+[mmc]: product: 004GE
+[mmc]: revision: 3.0
+[mmc]: ***SD/MMC 2 init OK!!!***
+sdcard 2 init ok
+The size of uboot is 0x000c4000.
+sum=0x19cb6c93
+src_sum=0x19cb6c93
+set_mmc_para,sdly 50M 0
+set_mmc_para,sdly 25M 0
+Succeed in loading uboot from sdmmc flash.
+Ready to disable icache.
+Jump to secend Boot.
+[      0.351]
+
+U-Boot 2011.09-rc1-00009-gc4e28a2-dirty (Feb 08 2017 - 12:51:58) Allwinner Technology 
+
+[      0.361]version: 1.1.0
+[      0.450]pmbus:   ready
+[      0.452]PMU: AXP221
+[      0.454]PMU: AXP22x found
+[      0.458]PMU: dcdc3 1200
+[      0.461]PMU: pll1 1008 Mhz,PLL6=600 Mhz
+AXI=336 Mhz,AHB=200 Mhz, APB1=100 Mhz 
+set power on vol to default
+dcdc1_vol = 3000
+dcdc2_vol = 1100
+dcdc3_vol = 1200
+dcdc4_vol = 0
+dcdc5_vol = 1500
+aldo2_vol = 2500
+aldo3_vol = 3000
+dldo2_vol = 1850
+find power_sply to end
+vbus pc exist, limit to pc
+fel key new mode
+run key detect
+no key found
+no key input
+dram_para_set start
+dram_para_set end
+[      0.588]DRAM:  1 GiB
+relocation Offset is: 35b09000
+smcl's set manager is NULL
+<axp22, dc1sw>
+<axp22, dldo2>
+workmode = 0
+MMC:     2
+[      0.795][mmc]: mmc driver ver 2014-07-15 17:16:00
+[      0.800][mmc]: get sdc_2xmode ok, val = 1
+[      1.089][mmc]: get sdc_f_max fail,use default sdc_f_max 50000000
+[      1.095][mmc]: get card_line ok, card_line = 4
+[      1.100][mmc]: get sdc_ex_dly_used fail,use default dly
+[      1.105][mmc]: SUNXI SD/MMC: 2
+[      1.110][mmc]: mmc 2 2xmode config clk
+[      1.122][mmc]: ************Try SD card 2************
+[      1.127][mmc]: mmc 2 cmd 8 timeout, err 100
+[      1.132][mmc]: smc 2 err, cmd 8,  RTO
+[      1.137][mmc]: mmc 2 mmc cmd 8 err 0x00000100
+[      1.141][mmc]: mmc send if cond failed
+[      1.145][mmc]: mmc 2 cmd 55 timeout, err 100
+[      1.149][mmc]: smc 2 err, cmd 55,  RTO
+[      1.155][mmc]: mmc 2 mmc cmd 55 err 0x00000100
+[      1.159][mmc]: send app cmd failed
+[      1.162][mmc]: ************Try MMC card 2************
+[      1.202][mmc]: mmc 2 2xmode config clk
+[      1.212][mmc]: mmc 2 2xmode config clk
+[      1.222][mmc]: mmc 2 2xmode config clk
+[      1.231][mmc]: MID 000011 PSN 63470696
+[      1.234][mmc]: PNM 004GE0 -- 0x30-30-34-47-45-30
+[      1.239][mmc]: PRV 0.0
+[      1.242][mmc]: MDT m-3 y-2016
+[      1.245][mmc]: MMC ver 5.0
+[      1.248][mmc]: ---------------mmc->clock 50000000-----------
+[      1.253][mmc]: ---------------mmc->bus_width 4--------------
+[      1.259][mmc]: SD/MMC Card: 4bit, capacity: 3776MB
+[      1.264][mmc]: boot0 capacity: 2000KB,boot1 capacity: 2000KB
+[      1.270][mmc]: ************SD/MMC 2 init OK!!!************
+[      1.276]sunxi flash init ok
+In:    serial
+Out:   serial
+Err:   serial
+--------fastboot partitions--------
+-total partitions:12-
+-name-        -start-       -size-      
+bootloader  : 1000000       2000000     
+env         : 3000000       1000000     
+boot        : 4000000       1000000     
+system      : 5000000       30000000    
+misc        : 35000000      1000000     
+recovery    : 36000000      2000000     
+cache       : 38000000      20000000    
+metadata    : 58000000      1000000     
+private     : 59000000      1000000     
+klog        : 5a000000      1000000     
+alog        : 5b000000      4000000     
+UDISK       : 5f000000      0           
+-----------------------------------
+base bootcmd=run setargs_nand boot_normal
+bootcmd set setargs_mmc
+key 0
+recovery key high 6, low 2
+cant find fstbt value
+misc partition found
+Fastboot detected, will boot fastboot
+to be run cmd=run setargs_mmc boot_fastboot
+mount part name bootloader
+cant open script.bin, maybe it is not exist
+WORK_MODE_BOOT
+board_status_probe
+[      1.383]pre sys mode
+sunxi_bmp_logo_display
+screen_id =0, screen_width =600, screen_height =1024
+[      1.403]Hit any key to stop autoboot:  0 
+run usb fastboot
+sunxi_fastboot_init
+recv addr 0x41000000
+send addr 0x73a2a0a0
+delay time 0
+usb init ok
+set address 0x8
+set address 0xb
+sunxi usb err: string line 238 is not supported
