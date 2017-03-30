@@ -1,0 +1,14 @@
+echo 3000000 > /sys/devices/platform/reg-22-cs-dldo3/max_microvolts
+echo 3000000 > /sys/devices/platform/reg-22-cs-dldo3/min_microvolts
+echo 64 > /sys/class/gpio/export
+echo 65 > /sys/class/gpio/export
+echo 66 > /sys/class/gpio/export
+echo 67 > /sys/class/gpio/export
+echo 201 > /sys/class/gpio/export
+echo 355 > /sys/class/gpio/export
+echo in > /sys/class/gpio/gpio64/direction
+echo in > /sys/class/gpio/gpio65/direction
+echo in > /sys/class/gpio/gpio66/direction
+echo in > /sys/class/gpio/gpio67/direction
+echo in > /sys/class/gpio/gpio355/direction
+
